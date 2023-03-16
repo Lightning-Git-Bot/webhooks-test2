@@ -9,7 +9,6 @@ by the Free Software Foundation at version 3 of the License.
 This program is distribute
 d in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
-GNU Affero General Public License for more details.
 You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
