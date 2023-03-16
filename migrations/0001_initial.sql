@@ -2,12 +2,6 @@
 );
     temporary_mute_role_id BIGINT,
     raid_mode BOOLEAN DEFAULT 'f',
-    flags INT
-    roles BIGINT [],
-    punishment_roles BIGINT [],
-    UNIQUE (guild_id, user_id)
-);
-
 DO $$ BEGIN
     CREATE TYPE log_format_enum AS ENUM ('minimal with timestamp', 'minimal without timestamp', 'emoji', 'embed');
 EXCEPTION
