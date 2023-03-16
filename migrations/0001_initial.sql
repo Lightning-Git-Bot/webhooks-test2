@@ -8,9 +8,7 @@ EXCEPTION
     WHEN duplicate_object THEN null;
 END $$;
 
-CREATE TABLE IF NOT EXISTS logging
-(
-    guild_id BIGINT NOT NULL,
+CREATE TA    guild_id BIGINT NOT NULL,
     channel_id BIGINT PRIMARY KEY,
     types INT,
     format log_format_enum DEFAULT 'minimal with timestamp',
