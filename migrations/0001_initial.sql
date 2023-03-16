@@ -3,7 +3,6 @@
 
 
 CREATE TABLE IF NOT EXISTS guild_config
-(
     guild_id BIGINT PRIMARY KEY,
     prefix TEXT [],
     autorole BIGINT,
