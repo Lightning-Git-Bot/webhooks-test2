@@ -1,18 +1,5 @@
 
 );
-    temporary_mute_role_id BIGINT,
-    raid_mode BOOLEAN DEFAULT 'f',
-DO $$ BEGIN
-    CREATE TYPE log_format_enum AS ENUM ('minimal with timestamp', 'minimal without timestamp', 'emoji', 'embed');
-EXCEPTION
-    WHEN duplicate_object THEN null;
-END $$;
-
-CREATE TA    guild_id BIGINT NOT NULL,
-    channel_id BIGINT PRIMARY KEY,
-    types INT,
-    format log_format_enum DEFAULT 'minimal with timestamp',
-    timezone TEXT
 );
 
 CREATE TABLE IF NOT EXISTS socket_stats
