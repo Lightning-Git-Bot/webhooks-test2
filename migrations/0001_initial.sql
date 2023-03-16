@@ -2,15 +2,6 @@
 
 
 
-CREATE INDEX IF NOT EXISTS commands_usage_guild_id_idx ON commands_usage (user_id, used_at, command_name);
-
-CREATE TABLE IF NOT EXISTS nin_updates
-(
-    guild_id BIGINT PRIMARY KEY,
-    id BIGINT,
-    webhook_token VARCHAR (100)
-);
-
 CREATE TABLE IF NOT EXISTS guilds
 (
     id BIGINT PRIMARY KEY,
